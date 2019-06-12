@@ -15,10 +15,16 @@ logger.setLevel(logging.INFO)
 universe.configure_logging()
 
 # for environments
-import feudal_networks.envs
+# import feudal_networks.envs
+import kang_gridworld
+
+OVERRIDE = True # whether to ignore specs for the create_env method
 
 def create_env(env_id, client_id, remotes, **kwargs):
     spec = gym.spec(env_id)
+
+    if OVERRIDE:
+        return create_feudal_env(env_id, client_id, remotes, **kwargs)
 
     if spec.tags.get('feudal', False):
         return create_feudal_env(env_id, client_id, remotes, **kwargs)

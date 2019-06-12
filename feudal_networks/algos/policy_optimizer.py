@@ -127,6 +127,9 @@ def env_runner(env, policy, num_local_steps, summary_writer,visualise):
             action_to_take = action.argmax()
             state, reward, terminal, info = env.step(action_to_take)
 
+            # FLAG - whether or not to render
+            env.render()
+
             # collect the experience
             rollout.add(last_state, action, reward, value_, terminal, last_features)
             length += 1
