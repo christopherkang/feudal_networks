@@ -1,0 +1,12 @@
+[
+  "tests/test_algos/test_feudal_policy_optimizer.py::TestFeudalPolicyOptimizer::test_init",
+  "tests/test_envs/test_vision_maze.py::TestVisionMaze::test_step",
+  "tests/test_policies/test_feudal_batch_processor.py::TestFeudalBatchProcessor::test_intrinsic_reward_and_gsum_calculation",
+  "tests/test_policies/test_feudal_batch_processor.py::TestFeudalBatchProcessor::test_simple_c_1",
+  "tests/test_policies/test_feudal_batch_processor.py::TestFeudalBatchProcessor::test_simple_c_2",
+  "tests/test_policies/test_feudal_batch_processor.py::TestFeudalBatchProcessor::test_simple_terminal_on_start",
+  "tests/test_policies/test_feudal_policy.py::TestFeudalPolicy::test_fit_simple_dataset",
+  "tests/test_policies/test_feudal_policy.py::TestFeudalPolicy::test_init",
+  "tests/test_policies/test_feudal_policy.py::TestFeudalPolicy::test_simple_manager_behavior",
+  "tests/test_policies/test_lstm_policy.py::TestLSTMPolicy::test_init"
+]
