@@ -85,6 +85,7 @@ class LSTMPolicy(object):
         tf.summary.scalar("model/beta", beta)
         # FLAG DISABLED
         # tf.summary.image("model/state", self.obs)
+        tf.summary.tensor_summary("model/state", self.obs)
         self.summary_op = tf.summary.merge_all()
 
     def get_initial_features(self):

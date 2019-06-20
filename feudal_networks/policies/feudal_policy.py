@@ -186,7 +186,8 @@ class FeudalPolicy(policy.Policy):
         tf.summary.scalar("model/var_global_norm", tf.global_norm(tf.get_collection(\
             tf.GraphKeys.TRAINABLE_VARIABLES, tf.get_variable_scope().name)))
         tf.summary.scalar("model/beta", beta)
-        tf.summary.image("model/state", self.obs)
+        # tf.summary.image("model/state", self.obs)
+        tf.summary.tensor_summary("model/state", self.obs)
         self.summary_op = tf.summary.merge_all()
 
 
